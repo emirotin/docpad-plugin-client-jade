@@ -1,0 +1,38 @@
+{
+	"name": "docpad-plugin-client-jade",
+	"version": "0.0.1",
+	"description": "Adds support for the Jade as a client-side template language to DocPad.",
+	"homepage": "https://github.com/emirotin/docpad-plugin-client-jade",
+	"keywords": [
+		"docpad",
+		"docpad-plugin",
+		"render",
+		"rendering",
+		"jade",
+		"template",
+		"client template",
+		"client-side template"
+	],
+	"author": "Eugene Mirotin <emirotin@gmail.com>",
+	"bugs": {
+		"url": "https://github.com/emirotin/docpad-plugin-client-jade/issues"
+	},
+	"repository" : {
+		"type": "git",
+		"url": "http://github.com/emirotin/docpad-plugin-client-jade.git"
+	},
+	"engines" : {
+		"node": ">=0.4.0",
+		"docpad": ">=6.3.x <7.0.0"
+	},
+	"dependencies": {
+		"jade": "0.27.5"
+	},
+	"devDependencies": {
+		"coffee-script": "1.3.x"
+	},
+	"main": "./out/cjade.plugin.js",
+	"scripts": {
+		"test": "node ./test/cjade.test.js"
+	}
+}
