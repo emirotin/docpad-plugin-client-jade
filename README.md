@@ -1,5 +1,5 @@
 # Jade Plugin for DocPad for writing client-side templates
-Adds support for the [Jade](http://jade-lang.com/) as a client-side template language to [DocPad](https://github.com/bevry/docpad).
+Adds support for [Jade](http://jade-lang.com/) as a client-side template language to [DocPad](https://github.com/bevry/docpad).
 
 Convention:  `.js.cjade`
 
