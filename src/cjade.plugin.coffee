@@ -25,11 +25,19 @@ module.exports = (BasePlugin) ->
 
       if inExtension == 'cjade' and outExtension in ['js',null]
         jade = require 'jade'
-        console.log file
         # Fetch useful paths
-        fullDirPath = file.get('fullDirPath')
+        key = file.get('relativeOutPath')
+        if config.stripJsExt and key[-3..] == '.js'
+          key = key[..-4]
+        if config.baseDir and config.baseDir.length and key[...config.baseDir.length] == config.baseDir
+          key = key[config.baseDir.length+1..]
 
+        preamble = """
+                   #{config.namespace} = #{config.namespace} || {};
+                   #{config.namespace}['#{key}'] = function
+                   """
+        compiled = '' + jade.compile(opts.content, client: true, filename: file.get('url'), pretty: config.prettify, debug: !config.prettify)
 
-        opts.content = '123'
+        opts.content = compiled.replace 'function anonymous', preamble
 
       next()
