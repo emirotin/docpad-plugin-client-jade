@@ -4,3 +4,4 @@ Makefile
 src/
 out/test/
 test/
+node_modules/
