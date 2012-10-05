@@ -30,6 +30,8 @@ npm install --save docpad-plugin-client-jade
 
 Read on Configuration file here: <https://github.com/bevry/docpad/wiki/Configuration>
 
+**Note** that in your config the key must be `"client-jade"` (which is part of the plugin name after 'docpad-plugin-').
+
 Currently the plugin supports the following options:
 
 * `namespace` – string, the namespace functions are attached to, defaults to `JST`

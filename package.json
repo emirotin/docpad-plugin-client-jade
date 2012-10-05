@@ -1,6 +1,6 @@
 {
 	"name": "docpad-plugin-client-jade",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Adds support for Jade as a client-side template language to DocPad.",
 	"homepage": "https://github.com/emirotin/docpad-plugin-client-jade",
 	"keywords": [
